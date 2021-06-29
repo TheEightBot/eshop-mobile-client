@@ -105,8 +105,9 @@ namespace eShopOnContainers
                 Longitude = double.Parse(_settingsService.Longitude, CultureInfo.InvariantCulture)
             };
 
-            var locationService = ViewModelLocator.Resolve<ILocationService>();
-            await locationService.UpdateUserLocation(location, _settingsService.AuthAccessToken);
+            //TODO: Locations have been removed
+            //var locationService = ViewModelLocator.Resolve<ILocationService>();
+            //await locationService.UpdateUserLocation(location, _settingsService.AuthAccessToken);
         }
     }
 }
